@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B6FDD262D06345900AF6004 /* VkSessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD252D06345900AF6004 /* VkSessionHandler.swift */; };
+		3B6FDD282D0634A000AF6004 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD272D0634A000AF6004 /* NetworkLogger.swift */; };
+		3B6FDD2A2D06402100AF6004 /* IconTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD292D06402100AF6004 /* IconTextView.swift */; };
+		3B6FDD2C2D0641C600AF6004 /* SelectCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD2B2D0641C600AF6004 /* SelectCityView.swift */; };
+		3B6FDD2E2D0642E700AF6004 /* VkTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD2D2D0642E700AF6004 /* VkTextField.swift */; };
+		3B6FDD302D06452000AF6004 /* CreateTripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD2F2D06452000AF6004 /* CreateTripViewModel.swift */; };
+		3B6FDD322D06457100AF6004 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD312D06457100AF6004 /* Location.swift */; };
+		3B6FDD342D06481200AF6004 /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD332D06481200AF6004 /* LocationSearchView.swift */; };
+		3B6FDD372D0685B900AF6004 /* VkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD362D0685B900AF6004 /* VkHelpers.swift */; };
+		3B6FDD392D069FC300AF6004 /* CreateTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD382D069FC300AF6004 /* CreateTripView.swift */; };
+		3B6FDD3B2D06A0E000AF6004 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD3A2D06A0E000AF6004 /* Constants.swift */; };
+		3B6FDD3D2D06A3F900AF6004 /* VkInputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD3C2D06A3F900AF6004 /* VkInputFieldView.swift */; };
+		3B6FDD3F2D06A74400AF6004 /* VkTextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD3E2D06A74400AF6004 /* VkTextEditorView.swift */; };
+		3B8287F42D03D75600D46417 /* VoyatekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8287F32D03D75600D46417 /* VoyatekApp.swift */; };
+		3B8287F62D03D75600D46417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8287F52D03D75600D46417 /* ContentView.swift */; };
+		3B8287F82D03D75900D46417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8287F72D03D75900D46417 /* Assets.xcassets */; };
+		3B8287FB2D03D75900D46417 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8287FA2D03D75900D46417 /* Preview Assets.xcassets */; };
+		3B8288052D03D75900D46417 /* VoyatekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288042D03D75900D46417 /* VoyatekTests.swift */; };
+		3B82880F2D03D75900D46417 /* VoyatekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82880E2D03D75900D46417 /* VoyatekUITests.swift */; };
+		3B8288112D03D75900D46417 /* VoyatekUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288102D03D75900D46417 /* VoyatekUITestsLaunchTests.swift */; };
+		3B8288222D03D87800D46417 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288212D03D87800D46417 /* NetworkManager.swift */; };
+		3B8288252D03D94100D46417 /* ApiInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288242D03D94100D46417 /* ApiInformation.swift */; };
+		3B8288272D03DD0E00D46417 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288262D03DD0E00D46417 /* ApiError.swift */; };
+		3B82882A2D03DFAA00D46417 /* MessageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288292D03DFAA00D46417 /* MessageHelper.swift */; };
+		3B82882E2D03ECA500D46417 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3B82882D2D03ECA500D46417 /* Alamofire */; };
+		3B8288302D03F0DA00D46417 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82882F2D03F0DA00D46417 /* Environment.swift */; };
+		3B8288322D03F71900D46417 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288312D03F71900D46417 /* RequestHandler.swift */; };
+		3B8288342D03FB3F00D46417 /* ServerErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288332D03FB3F00D46417 /* ServerErrorResponse.swift */; };
+		3B82883B2D03FCCB00D46417 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82883A2D03FCCB00D46417 /* ApiConstants.swift */; };
+		3B82883D2D04051100D46417 /* TripEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82883C2D04051100D46417 /* TripEndpoints.swift */; };
+		3B82883F2D0406D700D46417 /* TripRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82883E2D0406D700D46417 /* TripRequests.swift */; };
+		3B8288412D0407EE00D46417 /* TripResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288402D0407EE00D46417 /* TripResponses.swift */; };
+		3B8288432D04081300D46417 /* TripDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288422D04081300D46417 /* TripDataSource.swift */; };
+		3B8288452D055E0700D46417 /* TripHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288442D055E0700D46417 /* TripHomeView.swift */; };
+		3B82884B2D055EC600D46417 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82884A2D055EC600D46417 /* TripViewModel.swift */; };
+		3B8288502D0575F700D46417 /* UIColor + Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82884F2D0575F700D46417 /* UIColor + Util.swift */; };
+		3B8288542D05D50F00D46417 /* Color + Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288532D05D50F00D46417 /* Color + Util.swift */; };
+		3B8288572D05F30900D46417 /* VkPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288562D05F30900D46417 /* VkPrimaryButton.swift */; };
+		3B8288592D05FB7F00D46417 /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288582D05FB7F00D46417 /* TripView.swift */; };
+		3B82885B2D05FF3A00D46417 /* UIImage + Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82885A2D05FF3A00D46417 /* UIImage + Util.swift */; };
+		3B82885D2D06107C00D46417 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82885C2D06107C00D46417 /* TripModel.swift */; };
+		3B82885F2D06118500D46417 /* DateFormatter + Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82885E2D06118500D46417 /* DateFormatter + Util.swift */; };
+		3B8288632D061A3900D46417 /* MyTripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288622D061A3900D46417 /* MyTripsView.swift */; };
+		3B8288652D061B8D00D46417 /* VkMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8288642D061B8D00D46417 /* VkMenuView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B8288012D03D75900D46417 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B8287E82D03D75600D46417 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B8287EF2D03D75600D46417;
+			remoteInfo = Voyatek;
+		};
+		3B82880B2D03D75900D46417 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B8287E82D03D75600D46417 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B8287EF2D03D75600D46417;
+			remoteInfo = Voyatek;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B6FDD252D06345900AF6004 /* VkSessionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkSessionHandler.swift; sourceTree = "<group>"; };
+		3B6FDD272D0634A000AF6004 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		3B6FDD292D06402100AF6004 /* IconTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextView.swift; sourceTree = "<group>"; };
+		3B6FDD2B2D0641C600AF6004 /* SelectCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCityView.swift; sourceTree = "<group>"; };
+		3B6FDD2D2D0642E700AF6004 /* VkTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkTextField.swift; sourceTree = "<group>"; };
+		3B6FDD2F2D06452000AF6004 /* CreateTripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripViewModel.swift; sourceTree = "<group>"; };
+		3B6FDD312D06457100AF6004 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3B6FDD332D06481200AF6004 /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
+		3B6FDD362D0685B900AF6004 /* VkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkHelpers.swift; sourceTree = "<group>"; };
+		3B6FDD382D069FC300AF6004 /* CreateTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripView.swift; sourceTree = "<group>"; };
+		3B6FDD3A2D06A0E000AF6004 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3B6FDD3C2D06A3F900AF6004 /* VkInputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkInputFieldView.swift; sourceTree = "<group>"; };
+		3B6FDD3E2D06A74400AF6004 /* VkTextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkTextEditorView.swift; sourceTree = "<group>"; };
+		3B8287F02D03D75600D46417 /* Voyatek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyatek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B8287F32D03D75600D46417 /* VoyatekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyatekApp.swift; sourceTree = "<group>"; };
+		3B8287F52D03D75600D46417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B8287F72D03D75900D46417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B8287FA2D03D75900D46417 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B8288002D03D75900D46417 /* VoyatekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoyatekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B8288042D03D75900D46417 /* VoyatekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyatekTests.swift; sourceTree = "<group>"; };
+		3B82880A2D03D75900D46417 /* VoyatekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoyatekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B82880E2D03D75900D46417 /* VoyatekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyatekUITests.swift; sourceTree = "<group>"; };
+		3B8288102D03D75900D46417 /* VoyatekUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyatekUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B8288212D03D87800D46417 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3B8288242D03D94100D46417 /* ApiInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInformation.swift; sourceTree = "<group>"; };
+		3B8288262D03DD0E00D46417 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		3B8288292D03DFAA00D46417 /* MessageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHelper.swift; sourceTree = "<group>"; };
+		3B82882F2D03F0DA00D46417 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		3B8288312D03F71900D46417 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		3B8288332D03FB3F00D46417 /* ServerErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerErrorResponse.swift; sourceTree = "<group>"; };
+		3B82883A2D03FCCB00D46417 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		3B82883C2D04051100D46417 /* TripEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripEndpoints.swift; sourceTree = "<group>"; };
+		3B82883E2D0406D700D46417 /* TripRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRequests.swift; sourceTree = "<group>"; };
+		3B8288402D0407EE00D46417 /* TripResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripResponses.swift; sourceTree = "<group>"; };
+		3B8288422D04081300D46417 /* TripDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDataSource.swift; sourceTree = "<group>"; };
+		3B8288442D055E0700D46417 /* TripHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHomeView.swift; sourceTree = "<group>"; };
+		3B82884A2D055EC600D46417 /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
+		3B82884F2D0575F700D46417 /* UIColor + Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Util.swift"; sourceTree = "<group>"; };
+		3B8288532D05D50F00D46417 /* Color + Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Util.swift"; sourceTree = "<group>"; };
+		3B8288562D05F30900D46417 /* VkPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkPrimaryButton.swift; sourceTree = "<group>"; };
+		3B8288582D05FB7F00D46417 /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+		3B82885A2D05FF3A00D46417 /* UIImage + Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Util.swift"; sourceTree = "<group>"; };
+		3B82885C2D06107C00D46417 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		3B82885E2D06118500D46417 /* DateFormatter + Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter + Util.swift"; sourceTree = "<group>"; };
+		3B8288622D061A3900D46417 /* MyTripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsView.swift; sourceTree = "<group>"; };
+		3B8288642D061B8D00D46417 /* VkMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkMenuView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B8287ED2D03D75600D46417 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B82882E2D03ECA500D46417 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8287FD2D03D75900D46417 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8288072D03D75900D46417 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B8287E72D03D75600D46417 = {
+			isa = PBXGroup;
+			children = (
+				3B8287F22D03D75600D46417 /* Voyatek */,
+				3B8288032D03D75900D46417 /* VoyatekTests */,
+				3B82880D2D03D75900D46417 /* VoyatekUITests */,
+				3B8287F12D03D75600D46417 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B8287F12D03D75600D46417 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B8287F02D03D75600D46417 /* Voyatek.app */,
+				3B8288002D03D75900D46417 /* VoyatekTests.xctest */,
+				3B82880A2D03D75900D46417 /* VoyatekUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B8287F22D03D75600D46417 /* Voyatek */ = {
+			isa = PBXGroup;
+			children = (
+				3B8287F32D03D75600D46417 /* VoyatekApp.swift */,
+				3B8287F52D03D75600D46417 /* ContentView.swift */,
+				3B8288462D055E8B00D46417 /* Home */,
+				3B82884C2D0575AE00D46417 /* Util */,
+				3B8288202D03D84700D46417 /* Networking */,
+				3B8287F72D03D75900D46417 /* Assets.xcassets */,
+				3B8287F92D03D75900D46417 /* Preview Content */,
+			);
+			path = Voyatek;
+			sourceTree = "<group>";
+		};
+		3B8287F92D03D75900D46417 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B8287FA2D03D75900D46417 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B8288032D03D75900D46417 /* VoyatekTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B8288042D03D75900D46417 /* VoyatekTests.swift */,
+			);
+			path = VoyatekTests;
+			sourceTree = "<group>";
+		};
+		3B82880D2D03D75900D46417 /* VoyatekUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B82880E2D03D75900D46417 /* VoyatekUITests.swift */,
+				3B8288102D03D75900D46417 /* VoyatekUITestsLaunchTests.swift */,
+			);
+			path = VoyatekUITests;
+			sourceTree = "<group>";
+		};
+		3B8288202D03D84700D46417 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3B8288232D03D8C500D46417 /* Base Networking */,
+				3B8288352D03FBCC00D46417 /* Endpoints */,
+				3B8288382D03FBFD00D46417 /* Responses */,
+				3B8288372D03FBF400D46417 /* Requests */,
+				3B8288362D03FBEF00D46417 /* DataSource */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3B8288232D03D8C500D46417 /* Base Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3B8288212D03D87800D46417 /* NetworkManager.swift */,
+				3B8288242D03D94100D46417 /* ApiInformation.swift */,
+				3B82882F2D03F0DA00D46417 /* Environment.swift */,
+				3B82883A2D03FCCB00D46417 /* ApiConstants.swift */,
+				3B8288312D03F71900D46417 /* RequestHandler.swift */,
+				3B6FDD252D06345900AF6004 /* VkSessionHandler.swift */,
+				3B6FDD272D0634A000AF6004 /* NetworkLogger.swift */,
+				3B8288282D03DD2A00D46417 /* Error */,
+			);
+			path = "Base Networking";
+			sourceTree = "<group>";
+		};
+		3B8288282D03DD2A00D46417 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				3B8288262D03DD0E00D46417 /* ApiError.swift */,
+				3B8288332D03FB3F00D46417 /* ServerErrorResponse.swift */,
+				3B8288292D03DFAA00D46417 /* MessageHelper.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		3B8288352D03FBCC00D46417 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				3B82883C2D04051100D46417 /* TripEndpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		3B8288362D03FBEF00D46417 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				3B8288422D04081300D46417 /* TripDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		3B8288372D03FBF400D46417 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3B82883E2D0406D700D46417 /* TripRequests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		3B8288382D03FBFD00D46417 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				3B8288402D0407EE00D46417 /* TripResponses.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		3B8288462D055E8B00D46417 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B8288472D055E9B00D46417 /* Model */,
+				3B8288492D055EA600D46417 /* ViewModel */,
+				3B8288482D055EA100D46417 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3B8288472D055E9B00D46417 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B82885C2D06107C00D46417 /* TripModel.swift */,
+				3B6FDD312D06457100AF6004 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B8288482D055EA100D46417 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B8288442D055E0700D46417 /* TripHomeView.swift */,
+				3B8288582D05FB7F00D46417 /* TripView.swift */,
+				3B8288622D061A3900D46417 /* MyTripsView.swift */,
+				3B6FDD2B2D0641C600AF6004 /* SelectCityView.swift */,
+				3B6FDD332D06481200AF6004 /* LocationSearchView.swift */,
+				3B6FDD382D069FC300AF6004 /* CreateTripView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B8288492D055EA600D46417 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B82884A2D055EC600D46417 /* TripViewModel.swift */,
+				3B6FDD2F2D06452000AF6004 /* CreateTripViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B82884C2D0575AE00D46417 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3B8288552D05F2DF00D46417 /* Components */,
+				3B82884E2D0575C700D46417 /* Helpers */,
+				3B82884D2D0575BC00D46417 /* Extensions */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3B82884D2D0575BC00D46417 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B82884F2D0575F700D46417 /* UIColor + Util.swift */,
+				3B8288532D05D50F00D46417 /* Color + Util.swift */,
+				3B82885A2D05FF3A00D46417 /* UIImage + Util.swift */,
+				3B82885E2D06118500D46417 /* DateFormatter + Util.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B82884E2D0575C700D46417 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3B6FDD362D0685B900AF6004 /* VkHelpers.swift */,
+				3B6FDD3A2D06A0E000AF6004 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3B8288552D05F2DF00D46417 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3B8288562D05F30900D46417 /* VkPrimaryButton.swift */,
+				3B6FDD292D06402100AF6004 /* IconTextView.swift */,
+				3B6FDD3E2D06A74400AF6004 /* VkTextEditorView.swift */,
+				3B8288642D061B8D00D46417 /* VkMenuView.swift */,
+				3B6FDD3C2D06A3F900AF6004 /* VkInputFieldView.swift */,
+				3B6FDD2D2D0642E700AF6004 /* VkTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B8287EF2D03D75600D46417 /* Voyatek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B8288142D03D75900D46417 /* Build configuration list for PBXNativeTarget "Voyatek" */;
+			buildPhases = (
+				3B8287EC2D03D75600D46417 /* Sources */,
+				3B8287ED2D03D75600D46417 /* Frameworks */,
+				3B8287EE2D03D75600D46417 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Voyatek;
+			packageProductDependencies = (
+				3B82882D2D03ECA500D46417 /* Alamofire */,
+			);
+			productName = Voyatek;
+			productReference = 3B8287F02D03D75600D46417 /* Voyatek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B8287FF2D03D75900D46417 /* VoyatekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B8288172D03D75900D46417 /* Build configuration list for PBXNativeTarget "VoyatekTests" */;
+			buildPhases = (
+				3B8287FC2D03D75900D46417 /* Sources */,
+				3B8287FD2D03D75900D46417 /* Frameworks */,
+				3B8287FE2D03D75900D46417 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B8288022D03D75900D46417 /* PBXTargetDependency */,
+			);
+			name = VoyatekTests;
+			productName = VoyatekTests;
+			productReference = 3B8288002D03D75900D46417 /* VoyatekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B8288092D03D75900D46417 /* VoyatekUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B82881A2D03D75900D46417 /* Build configuration list for PBXNativeTarget "VoyatekUITests" */;
+			buildPhases = (
+				3B8288062D03D75900D46417 /* Sources */,
+				3B8288072D03D75900D46417 /* Frameworks */,
+				3B8288082D03D75900D46417 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B82880C2D03D75900D46417 /* PBXTargetDependency */,
+			);
+			name = VoyatekUITests;
+			productName = VoyatekUITests;
+			productReference = 3B82880A2D03D75900D46417 /* VoyatekUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B8287E82D03D75600D46417 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3B8287EF2D03D75600D46417 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					3B8287FF2D03D75900D46417 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 3B8287EF2D03D75600D46417;
+					};
+					3B8288092D03D75900D46417 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 3B8287EF2D03D75600D46417;
+					};
+				};
+			};
+			buildConfigurationList = 3B8287EB2D03D75600D46417 /* Build configuration list for PBXProject "Voyatek" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B8287E72D03D75600D46417;
+			packageReferences = (
+				3B82882C2D03ECA500D46417 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 3B8287F12D03D75600D46417 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B8287EF2D03D75600D46417 /* Voyatek */,
+				3B8287FF2D03D75900D46417 /* VoyatekTests */,
+				3B8288092D03D75900D46417 /* VoyatekUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B8287EE2D03D75600D46417 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B8287FB2D03D75900D46417 /* Preview Assets.xcassets in Resources */,
+				3B8287F82D03D75900D46417 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8287FE2D03D75900D46417 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8288082D03D75900D46417 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B8287EC2D03D75600D46417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6FDD282D0634A000AF6004 /* NetworkLogger.swift in Sources */,
+				3B8287F62D03D75600D46417 /* ContentView.swift in Sources */,
+				3B6FDD322D06457100AF6004 /* Location.swift in Sources */,
+				3B82882A2D03DFAA00D46417 /* MessageHelper.swift in Sources */,
+				3B6FDD392D069FC300AF6004 /* CreateTripView.swift in Sources */,
+				3B6FDD342D06481200AF6004 /* LocationSearchView.swift in Sources */,
+				3B82883B2D03FCCB00D46417 /* ApiConstants.swift in Sources */,
+				3B8288452D055E0700D46417 /* TripHomeView.swift in Sources */,
+				3B8288342D03FB3F00D46417 /* ServerErrorResponse.swift in Sources */,
+				3B82883D2D04051100D46417 /* TripEndpoints.swift in Sources */,
+				3B6FDD2C2D0641C600AF6004 /* SelectCityView.swift in Sources */,
+				3B8288432D04081300D46417 /* TripDataSource.swift in Sources */,
+				3B6FDD3D2D06A3F900AF6004 /* VkInputFieldView.swift in Sources */,
+				3B6FDD2A2D06402100AF6004 /* IconTextView.swift in Sources */,
+				3B8288412D0407EE00D46417 /* TripResponses.swift in Sources */,
+				3B82885F2D06118500D46417 /* DateFormatter + Util.swift in Sources */,
+				3B6FDD2E2D0642E700AF6004 /* VkTextField.swift in Sources */,
+				3B8288222D03D87800D46417 /* NetworkManager.swift in Sources */,
+				3B8288572D05F30900D46417 /* VkPrimaryButton.swift in Sources */,
+				3B82884B2D055EC600D46417 /* TripViewModel.swift in Sources */,
+				3B8288502D0575F700D46417 /* UIColor + Util.swift in Sources */,
+				3B8288592D05FB7F00D46417 /* TripView.swift in Sources */,
+				3B82883F2D0406D700D46417 /* TripRequests.swift in Sources */,
+				3B6FDD3F2D06A74400AF6004 /* VkTextEditorView.swift in Sources */,
+				3B8288302D03F0DA00D46417 /* Environment.swift in Sources */,
+				3B82885B2D05FF3A00D46417 /* UIImage + Util.swift in Sources */,
+				3B8288542D05D50F00D46417 /* Color + Util.swift in Sources */,
+				3B6FDD302D06452000AF6004 /* CreateTripViewModel.swift in Sources */,
+				3B8288652D061B8D00D46417 /* VkMenuView.swift in Sources */,
+				3B82885D2D06107C00D46417 /* TripModel.swift in Sources */,
+				3B8287F42D03D75600D46417 /* VoyatekApp.swift in Sources */,
+				3B8288272D03DD0E00D46417 /* ApiError.swift in Sources */,
+				3B6FDD262D06345900AF6004 /* VkSessionHandler.swift in Sources */,
+				3B6FDD372D0685B900AF6004 /* VkHelpers.swift in Sources */,
+				3B8288322D03F71900D46417 /* RequestHandler.swift in Sources */,
+				3B8288632D061A3900D46417 /* MyTripsView.swift in Sources */,
+				3B8288252D03D94100D46417 /* ApiInformation.swift in Sources */,
+				3B6FDD3B2D06A0E000AF6004 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8287FC2D03D75900D46417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B8288052D03D75900D46417 /* VoyatekTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8288062D03D75900D46417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B8288112D03D75900D46417 /* VoyatekUITestsLaunchTests.swift in Sources */,
+				3B82880F2D03D75900D46417 /* VoyatekUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B8288022D03D75900D46417 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B8287EF2D03D75600D46417 /* Voyatek */;
+			targetProxy = 3B8288012D03D75900D46417 /* PBXContainerItemProxy */;
+		};
+		3B82880C2D03D75900D46417 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B8287EF2D03D75600D46417 /* Voyatek */;
+			targetProxy = 3B82880B2D03D75900D46417 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B8288122D03D75900D46417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B8288132D03D75900D46417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B8288152D03D75900D46417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Voyatek/Preview Content\"";
+				DEVELOPMENT_TEAM = 3V9R8JFN46;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidstall.co.Voyatek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B8288162D03D75900D46417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Voyatek/Preview Content\"";
+				DEVELOPMENT_TEAM = 3V9R8JFN46;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidstall.co.Voyatek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B8288182D03D75900D46417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3V9R8JFN46;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidstall.co.VoyatekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voyatek.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Voyatek";
+			};
+			name = Debug;
+		};
+		3B8288192D03D75900D46417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3V9R8JFN46;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidstall.co.VoyatekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voyatek.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Voyatek";
+			};
+			name = Release;
+		};
+		3B82881B2D03D75900D46417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3V9R8JFN46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidstall.co.VoyatekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Voyatek;
+			};
+			name = Debug;
+		};
+		3B82881C2D03D75900D46417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3V9R8JFN46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laidstall.co.VoyatekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Voyatek;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B8287EB2D03D75600D46417 /* Build configuration list for PBXProject "Voyatek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B8288122D03D75900D46417 /* Debug */,
+				3B8288132D03D75900D46417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B8288142D03D75900D46417 /* Build configuration list for PBXNativeTarget "Voyatek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B8288152D03D75900D46417 /* Debug */,
+				3B8288162D03D75900D46417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B8288172D03D75900D46417 /* Build configuration list for PBXNativeTarget "VoyatekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B8288182D03D75900D46417 /* Debug */,
+				3B8288192D03D75900D46417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B82881A2D03D75900D46417 /* Build configuration list for PBXNativeTarget "VoyatekUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B82881B2D03D75900D46417 /* Debug */,
+				3B82881C2D03D75900D46417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B82882C2D03ECA500D46417 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B82882D2D03ECA500D46417 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B82882C2D03ECA500D46417 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3B8287E82D03D75600D46417 /* Project object */;
+}
