@@ -24,6 +24,7 @@
 		3B6FDD482D06D4A800AF6004 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD472D06D4A800AF6004 /* ActivityView.swift */; };
 		3B6FDD4A2D06DBDC00AF6004 /* TripItineraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD492D06DBDC00AF6004 /* TripItineraryView.swift */; };
 		3B6FDD4C2D06E5AD00AF6004 /* TripDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD4B2D06E5AD00AF6004 /* TripDetailViewModel.swift */; };
+		3B6FDD4E2D073A5800AF6004 /* IDGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD4D2D073A5800AF6004 /* IDGen.swift */; };
 		3B8287F42D03D75600D46417 /* VoyatekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8287F32D03D75600D46417 /* VoyatekApp.swift */; };
 		3B8287F62D03D75600D46417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8287F52D03D75600D46417 /* ContentView.swift */; };
 		3B8287F82D03D75900D46417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8287F72D03D75900D46417 /* Assets.xcassets */; };
@@ -92,6 +93,7 @@
 		3B6FDD472D06D4A800AF6004 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		3B6FDD492D06DBDC00AF6004 /* TripItineraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripItineraryView.swift; sourceTree = "<group>"; };
 		3B6FDD4B2D06E5AD00AF6004 /* TripDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewModel.swift; sourceTree = "<group>"; };
+		3B6FDD4D2D073A5800AF6004 /* IDGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDGen.swift; sourceTree = "<group>"; };
 		3B8287F02D03D75600D46417 /* Voyatek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyatek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8287F32D03D75600D46417 /* VoyatekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyatekApp.swift; sourceTree = "<group>"; };
 		3B8287F52D03D75600D46417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				3B6FDD362D0685B900AF6004 /* VkHelpers.swift */,
+				3B6FDD4D2D073A5800AF6004 /* IDGen.swift */,
 				3B6FDD3A2D06A0E000AF6004 /* Constants.swift */,
 			);
 			path = Helpers;
@@ -584,6 +587,7 @@
 				3B6FDD262D06345900AF6004 /* VkSessionHandler.swift in Sources */,
 				3B6FDD372D0685B900AF6004 /* VkHelpers.swift in Sources */,
 				3B8288322D03F71900D46417 /* RequestHandler.swift in Sources */,
+				3B6FDD4E2D073A5800AF6004 /* IDGen.swift in Sources */,
 				3B8288632D061A3900D46417 /* MyTripsView.swift in Sources */,
 				3B8288252D03D94100D46417 /* ApiInformation.swift in Sources */,
 				3B6FDD3B2D06A0E000AF6004 /* Constants.swift in Sources */,

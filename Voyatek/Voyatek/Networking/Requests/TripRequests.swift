@@ -8,7 +8,7 @@
 import Foundation
 
 struct CreateTripRequest: Encodable {
-   var id: Int?
+   var id: String?
    var tripName, travelStyle, description, startDate: String?
-   var endDate, destination: String?
+   var endDate, destination, imageUrl: String?
 }

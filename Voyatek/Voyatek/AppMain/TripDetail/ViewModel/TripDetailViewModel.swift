@@ -11,7 +11,7 @@ import Foundation
 class TripDetailViewModel: ObservableObject {
    var dataSource: TripDataSource?
    
-   @Published var trip: TripModel?
+   var trip: TripModel?
    
    var tripId: String?
    
@@ -40,7 +40,8 @@ class TripDetailViewModel: ObservableObject {
             let mappedTrip = TripModel(data: trip)
             DispatchQueue.main.async { [weak self] in
                guard let self = self else { return }
-               self.trip = mappedTrip
+               let newTrip = setMediumDates(model: mappedTrip)
+               self.trip = newTrip
                updateState(isLoading: isLoading, isFetched: isFetched, message: "")
             }
          }
@@ -60,5 +61,14 @@ class TripDetailViewModel: ObservableObject {
        self.isLoading = isLoading
        self.isFetched = isFetched
        self.message = message ?? ""
+   }
+   
+   fileprivate func setMediumDates(model: TripModel?) -> TripModel? {
+      if let trip = model {
+         trip.startDate = DateFormatter.getMediumDateFromDateString(from: trip.startDate)
+         trip.endDate = DateFormatter.getMediumDateFromDateString(from: trip.endDate)
+         return trip
+      }
+      return nil
    }
 }

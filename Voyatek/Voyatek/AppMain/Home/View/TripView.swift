@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TripView: View {
-   @Binding var imageName: String
+   var image: Image?
    let location: String
    let title: String
    let date: String
@@ -16,14 +16,14 @@ struct TripView: View {
    @State var dominantColor: Color = .white
    var action: () -> Void
    
-   init(imageName: Binding<String> = .constant("trip.placeholder"),
+   init(image: Image? = nil,
         location: String,
         title: String,
         date: String,
         noOfDays: String,
         action: @escaping () -> Void
    ) {
-      self._imageName = imageName
+      self.image = image
       self.location = location
       self.title = title
       self.date = date
@@ -34,12 +34,13 @@ struct TripView: View {
    var body: some View {
       VStack(alignment: .center, spacing: 14) {
          ZStack(alignment: .topTrailing) {
-            Image(imageName)
-               .resizable()
-               .scaledToFit()
-               .onAppear(perform: {
-                  extractDominantColor()
-               })
+            if let image = image {
+               image
+                  .resizable()
+                  .scaledToFit()
+            } else {
+               Image("trip.placeholder")
+            }
             
             Text(location)
                .foregroundStyle(.white)
@@ -88,14 +89,9 @@ struct TripView: View {
       }
       .padding(.all, 16)
       .clipShape(.rect(cornerRadius: 4))
-      .border(Color.gray.opacity(0.3))
-   }
-   
-   private func extractDominantColor() {
-      guard let uiImage = UIImage(named: imageName) else { return }
-      
-      if let dominantColor = uiImage.dominantColor() {
-         self.dominantColor = Color(dominantColor)
+      .overlay {
+         RoundedRectangle(cornerRadius: 4)
+            .stroke(Color.gray.opacity(0.3))
       }
    }
 }

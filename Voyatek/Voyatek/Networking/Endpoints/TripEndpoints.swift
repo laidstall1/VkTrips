@@ -16,6 +16,10 @@ enum TripEndpoints: ApiInformation {
    var collectionName: String? {
       return "trips"
    }
+   
+   var withApi: Bool {
+      return true
+   }
 
    var method: HTTPMethod {
       switch self {
