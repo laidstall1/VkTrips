@@ -137,7 +137,8 @@ struct TripHomeView: View {
                   get: { viewModel.tripData ?? [] },
                   set: { viewModel.tripData = $0 }
                ), tripCategoryData: $viewModel.tripCategoryData,
-                           submissionText: $viewModel.selectedTripCategory)
+                           submissionText: $viewModel.selectedTripCategory) { id in
+               }
             }
             
             .padding(.horizontal, 16)

@@ -38,4 +38,10 @@ class TripModel: Identifiable, ObservableObject {
       self.destination = destination ?? ""
       self.noOfDays = noOfDays ?? ""
    }
+   
+   static var data: [TripModel] = [
+      .init(id: 0, tripName: "Bahamas Family Trip", travelStyle: "Solo", description: "A family reunion", startDate: "19th April 2024", endDate: "19th April 2024", destination: "Bahamas", noOfDays: "5"),
+      .init(id: 0, tripName: "Bahamas Family Trip", travelStyle: "Solo", description: "A family reunion", startDate: "19th April 2024", endDate: "19th April 2024", destination: "Bahamas", noOfDays: "5"),   .init(id: 0, tripName: "Bahamas Family Trip", travelStyle: "Solo", description: "A family reunion", startDate: "19th April 2024", endDate: "19th April 2024", destination: "Bahamas", noOfDays: "5"),
+      .init(id: 0, tripName: "Bahamas Family Trip", travelStyle: "Solo", description: "A family reunion", startDate: "19th April 2024", endDate: "19th April 2024", destination: "Bahamas", noOfDays: "5"),
+   ]
 }
