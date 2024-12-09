@@ -19,5 +19,5 @@ Voyatek uses Swift Package Manager (SPM) to manage dependencies. To install the 
 - Add Alamofire to your project via Swift Package Manager if it’s not already included via:  https://github.com/Alamofire/Alamofire.git
 - Choose the latest stable version.
 - Build and run the project.
-- When creating a trip, in the location search field, search using any of these keywords: "Lagos", "Algeria", "Qatar"
+- When creating a trip, in the location search field, search using any of these keywords: "Lagos", "Algeria", "Qatar".
 
