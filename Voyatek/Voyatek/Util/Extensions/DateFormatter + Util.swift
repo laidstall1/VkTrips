@@ -26,7 +26,17 @@ extension DateFormatter {
    
    static func getDateString(from date: Date, format: String = "yyyy-MM-dd") -> String {
       let dateFormatter = DateFormatter()
-      dateFormatter.dateStyle = .medium
+      dateFormatter.dateFormat = format
       return dateFormatter.string(from: date)
+   } 
+   
+   static func getMediumDateFromDateString(from dateStr: String, format: String = "yyyy-MM-dd") -> String {
+      let dateFormatter = DateFormatter()
+      dateFormatter.dateFormat = format
+      if let date = dateFormatter.date(from: dateStr) {
+         dateFormatter.dateStyle = .medium
+         return dateFormatter.string(from: date)
+      }
+      return String()
    }
 }

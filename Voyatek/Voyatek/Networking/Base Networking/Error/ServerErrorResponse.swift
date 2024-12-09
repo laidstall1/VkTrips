@@ -10,3 +10,7 @@ import Foundation
 struct ServerErrorResponse: Decodable {
     let errorMessage: String
 }
+
+struct ErrorResponse: Decodable {
+    let message: String?
+}

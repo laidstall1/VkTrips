@@ -48,9 +48,6 @@ class TripViewModel: ObservableObject {
    init() {
       self.dataSource = TripDataSource()
       trip = TripModel()
-      VkHelpers.delay(durationInSec: 3) {
-         self.tripData = TripModel.data
-      }
    }
    
    func fetchTrips() {
@@ -60,19 +57,21 @@ class TripViewModel: ObservableObject {
          do {
             let trips = try await dataSource?.getTrips()
             let mappedTrips = trips?.map { TripModel(data: $0) }
-            DispatchQueue.main.async {
-               self.tripData = mappedTrips
-               self.isLoading = false
-               self.isFetched = true
+            DispatchQueue.main.async { [weak self] in
+               guard let self = self else { return }
+               tripData = mappedTrips
+               isLoading = false
+               isFetched = true
             }
          }
          catch {
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [weak self] in
+               guard let self = self else { return }
                if let error = (error as? ApiError)?.description {
-                  self.message = error
+                  message = error
                }
-               self.isLoading = false
-               self.isFetched = true
+               isLoading = false
+               isFetched = true
             }
          }
       }
@@ -91,13 +90,16 @@ class TripViewModel: ObservableObject {
       Task {
          do {
             let trip = try await dataSource?.postCreateTrip(request: req)
-            DispatchQueue.main.async {
-               self.isLoading = false
-               self.message = "Successfully created \(trip?.tripName ?? "")"
+            DispatchQueue.main.async { [weak self] in
+               guard let self = self else { return }
+               isLoading = false
+               message = "Successfully created \(trip?.tripName ?? "")"
+               clear()
             }
          }
          catch {
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [weak self] in
+               guard let self = self else { return }
                if let error = (error as? ApiError)?.description {
                   self.message = error
                }
@@ -105,6 +107,10 @@ class TripViewModel: ObservableObject {
             }
          }
       }
+   }
+   
+   fileprivate func clear() {
+      trip = TripModel()
    }
 }
 

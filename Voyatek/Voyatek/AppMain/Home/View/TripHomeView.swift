@@ -130,6 +130,11 @@ struct TripHomeView: View {
                }
             }
             .alert(viewModel.message, isPresented: .constant(!viewModel.message.isEmpty)) {
+               Button("OK") {
+                  viewModel.message = String()
+                  viewModel.fetchTrips()
+                  createTripVm.clear()
+               }
             }
             
             VStack {

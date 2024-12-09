@@ -52,18 +52,26 @@ class NetworkManager<Target: ApiInformation> {
          return .NoNetwork
       }
       
-      if let data = data,
-         let serverError = try? JSONDecoder().decode(ServerErrorResponse.self, from: data) {
-         return .StatusMessage(serverError.errorMessage)
+      if let data = data {
+         if let decodingError = try? JSONDecoder().decode(ServerErrorResponse.self, from: data) {
+            return .StatusMessage(decodingError.errorMessage)
+         }
+         
+         if let genericError = try? JSONDecoder().decode(ErrorResponse.self, from: data) {
+            return .StatusMessage(genericError.message ?? "Unknown error occurred")
+         }
+         
+         if data.isEmpty {
+            return .NoData
+         }
       }
-      
       return .ServerError
    }
-   
-   private func handleGeneralError(error: Error) -> ApiError {
-      if let apiError = error as? ApiError {
-         return apiError
-      }
-      return .General
-   }
+    
+    private func handleGeneralError(error: Error) -> ApiError {
+       if let apiError = error as? ApiError {
+          return apiError
+       }
+       return .General
+    }
 }

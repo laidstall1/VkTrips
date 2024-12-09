@@ -5,10 +5,10 @@
 //  Created by DIGITAL VENTURES on 09/12/2024.
 //
 
-import Foundation
+import UIKit
 
 enum VkHelpers {
-   public static func delay(durationInSec seconds: Double, completion: @escaping () -> Void) {
+   static func delay(durationInSec seconds: Double, completion: @escaping () -> Void) {
       DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: completion)
    }
    
@@ -16,6 +16,13 @@ enum VkHelpers {
       DispatchQueue.main.async {
          block()
       }
+   }
+   
+   func imageFromBase64(base64String: String) -> UIImage? {
+       if let imageData = Data(base64Encoded: base64String, options: .ignoreUnknownCharacters) {
+           return UIImage(data: imageData)
+       }
+       return nil
    }
 }
 

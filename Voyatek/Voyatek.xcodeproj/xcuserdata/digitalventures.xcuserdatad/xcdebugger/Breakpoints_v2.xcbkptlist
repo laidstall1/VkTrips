@@ -228,5 +228,101 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCF72537-D689-49BD-8DDA-7411431A2A8A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voyatek/Networking/Base Networking/RequestHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "createRequest(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F9C09B7-2B19-4B9D-AECB-1E9C55DDCB4C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voyatek/AppMain/Home/ViewModel/TripViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "fetchTrips()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D982D752-4B5B-4BDC-9731-DF8CFE970B1C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voyatek/Util/Extensions/DateFormatter + Util.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getMediumDateFromDateString(from:format:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D982D752-4B5B-4BDC-9731-DF8CFE970B1C - 1aee18a4e7623e5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static __C.NSDateFormatter.getMediumDateFromDateString(from: Swift.String, format: Swift.String) -&gt; Swift.String"
+                  moduleName = "Voyatek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/digitalventures/Documents/GitHub/Voyatek/Voyatek/Util/Extensions/DateFormatter%20+%20Util.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "D982D752-4B5B-4BDC-9731-DF8CFE970B1C - 1aee18a4e7623e5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static __C.NSDateFormatter.getMediumDateFromDateString(from: Swift.String, format: Swift.String) -&gt; Swift.String"
+                  moduleName = "Voyatek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/digitalventures/Documents/GitHub/Voyatek/Voyatek/Util/Extensions/DateFormatter%20+%20Util.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "664">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2C7B18F0-2CC6-4244-B40E-DE2E47B08AF4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voyatek/AppMain/Home/ViewModel/TripViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "postCreateTrip()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

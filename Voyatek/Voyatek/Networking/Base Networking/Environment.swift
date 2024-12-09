@@ -15,7 +15,7 @@ enum Environment {
     var baseURL: URL? {
         switch self {
         case .development:
-            return URL(string: "https://voyatek.free.beeceptor.com")
+            return URL(string: "https://caf80495a53a11b31ed8.free.beeceptor.com")
 
         default:
            return nil
