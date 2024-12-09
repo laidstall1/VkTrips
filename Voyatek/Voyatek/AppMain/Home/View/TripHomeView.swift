@@ -94,7 +94,10 @@ struct TripHomeView: View {
                      SelectCityView(viewModel: createTripVm,
                                     shouldDismiss: $viewModel.showSelectLocation)
                   }
-                  .sheet(isPresented: .constant(viewModel.showDatePicker != nil), content: {
+                  .sheet(isPresented: .constant(viewModel.showDatePicker != nil), onDismiss: {
+                     viewModel.showDatePicker = nil
+
+                  }, content: {
                      if let showDatePicker = viewModel.showDatePicker {
                         DatePicker(
                            showDatePicker == .startDate ? "Start Date" : "End Date",
