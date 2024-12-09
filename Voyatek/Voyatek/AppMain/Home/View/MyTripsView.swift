@@ -11,6 +11,10 @@ struct MyTripsView: View {
    @Binding var tripData: [TripModel]
    @Binding var tripCategoryData: [String]
    @Binding var submissionText: String
+   var action: ((Int) -> Void)?
+   
+   @State private var selectedTripId: Int?
+
     var body: some View {
        VStack(alignment: .leading, spacing: 16) {
           VStack(alignment: .leading, spacing: 4) {
@@ -35,10 +39,20 @@ struct MyTripsView: View {
           
           VStack {
              ForEach(tripData) { trip in
-                TripView(location: trip.destination,
-                         title: trip.tripName,
-                         date: trip.startDate,
-                         noOfDays: trip.noOfDays)
+                NavigationLink(
+                  destination: TripDetailView(viewModel: TripDetailViewModel(tripId: String(trip.id))),
+                  tag: trip.id,
+                  selection: $selectedTripId,
+                  label: {
+                     TripView(location: trip.destination,
+                              title: trip.tripName,
+                              date: trip.startDate,
+                              noOfDays: "\(trip.noOfDays) day(s)", action: {
+                        selectedTripId = trip.id
+                     })
+                  }
+                )
+                .buttonStyle(PlainButtonStyle())
              }
           }
        }
@@ -46,5 +60,5 @@ struct MyTripsView: View {
 }
 
 #Preview {
-   MyTripsView(tripData: .constant([]), tripCategoryData: .constant(["Planned Trips"]), submissionText: .constant(""))
+   MyTripsView(tripData: .constant([]), tripCategoryData: .constant(["Planned Trips"]), submissionText: .constant(""), action: { _ in })
 }
