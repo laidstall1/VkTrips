@@ -20,6 +20,10 @@
 		3B6FDD3B2D06A0E000AF6004 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD3A2D06A0E000AF6004 /* Constants.swift */; };
 		3B6FDD3D2D06A3F900AF6004 /* VkInputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD3C2D06A3F900AF6004 /* VkInputFieldView.swift */; };
 		3B6FDD3F2D06A74400AF6004 /* VkTextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD3E2D06A74400AF6004 /* VkTextEditorView.swift */; };
+		3B6FDD462D06CD2900AF6004 /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD452D06CD2900AF6004 /* TripDetailView.swift */; };
+		3B6FDD482D06D4A800AF6004 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD472D06D4A800AF6004 /* ActivityView.swift */; };
+		3B6FDD4A2D06DBDC00AF6004 /* TripItineraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD492D06DBDC00AF6004 /* TripItineraryView.swift */; };
+		3B6FDD4C2D06E5AD00AF6004 /* TripDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDD4B2D06E5AD00AF6004 /* TripDetailViewModel.swift */; };
 		3B8287F42D03D75600D46417 /* VoyatekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8287F32D03D75600D46417 /* VoyatekApp.swift */; };
 		3B8287F62D03D75600D46417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8287F52D03D75600D46417 /* ContentView.swift */; };
 		3B8287F82D03D75900D46417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8287F72D03D75900D46417 /* Assets.xcassets */; };
@@ -84,6 +88,10 @@
 		3B6FDD3A2D06A0E000AF6004 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3B6FDD3C2D06A3F900AF6004 /* VkInputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkInputFieldView.swift; sourceTree = "<group>"; };
 		3B6FDD3E2D06A74400AF6004 /* VkTextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkTextEditorView.swift; sourceTree = "<group>"; };
+		3B6FDD452D06CD2900AF6004 /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
+		3B6FDD472D06D4A800AF6004 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		3B6FDD492D06DBDC00AF6004 /* TripItineraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripItineraryView.swift; sourceTree = "<group>"; };
+		3B6FDD4B2D06E5AD00AF6004 /* TripDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewModel.swift; sourceTree = "<group>"; };
 		3B8287F02D03D75600D46417 /* Voyatek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyatek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8287F32D03D75600D46417 /* VoyatekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyatekApp.swift; sourceTree = "<group>"; };
 		3B8287F52D03D75600D46417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +153,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B6FDD402D06CCA100AF6004 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B8288472D055E9B00D46417 /* Model */,
+				3B8288492D055EA600D46417 /* ViewModel */,
+				3B8288482D055EA100D46417 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3B6FDD412D06CCBF00AF6004 /* TripDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3B6FDD422D06CCD600AF6004 /* Model */,
+				3B6FDD432D06CCDE00AF6004 /* ViewModel */,
+				3B6FDD442D06CCE400AF6004 /* View */,
+			);
+			path = TripDetail;
+			sourceTree = "<group>";
+		};
+		3B6FDD422D06CCD600AF6004 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B6FDD432D06CCDE00AF6004 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B6FDD4B2D06E5AD00AF6004 /* TripDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B6FDD442D06CCE400AF6004 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B6FDD452D06CD2900AF6004 /* TripDetailView.swift */,
+				3B6FDD472D06D4A800AF6004 /* ActivityView.swift */,
+				3B6FDD492D06DBDC00AF6004 /* TripItineraryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3B8287E72D03D75600D46417 = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +223,7 @@
 			children = (
 				3B8287F32D03D75600D46417 /* VoyatekApp.swift */,
 				3B8287F52D03D75600D46417 /* ContentView.swift */,
-				3B8288462D055E8B00D46417 /* Home */,
+				3B8288462D055E8B00D46417 /* AppMain */,
 				3B82884C2D0575AE00D46417 /* Util */,
 				3B8288202D03D84700D46417 /* Networking */,
 				3B8287F72D03D75900D46417 /* Assets.xcassets */,
@@ -273,14 +326,13 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
-		3B8288462D055E8B00D46417 /* Home */ = {
+		3B8288462D055E8B00D46417 /* AppMain */ = {
 			isa = PBXGroup;
 			children = (
-				3B8288472D055E9B00D46417 /* Model */,
-				3B8288492D055EA600D46417 /* ViewModel */,
-				3B8288482D055EA100D46417 /* View */,
+				3B6FDD412D06CCBF00AF6004 /* TripDetail */,
+				3B6FDD402D06CCA100AF6004 /* Home */,
 			);
-			path = Home;
+			path = AppMain;
 			sourceTree = "<group>";
 		};
 		3B8288472D055E9B00D46417 /* Model */ = {
@@ -502,15 +554,18 @@
 				3B82883B2D03FCCB00D46417 /* ApiConstants.swift in Sources */,
 				3B8288452D055E0700D46417 /* TripHomeView.swift in Sources */,
 				3B8288342D03FB3F00D46417 /* ServerErrorResponse.swift in Sources */,
+				3B6FDD4A2D06DBDC00AF6004 /* TripItineraryView.swift in Sources */,
 				3B82883D2D04051100D46417 /* TripEndpoints.swift in Sources */,
 				3B6FDD2C2D0641C600AF6004 /* SelectCityView.swift in Sources */,
 				3B8288432D04081300D46417 /* TripDataSource.swift in Sources */,
 				3B6FDD3D2D06A3F900AF6004 /* VkInputFieldView.swift in Sources */,
+				3B6FDD482D06D4A800AF6004 /* ActivityView.swift in Sources */,
 				3B6FDD2A2D06402100AF6004 /* IconTextView.swift in Sources */,
 				3B8288412D0407EE00D46417 /* TripResponses.swift in Sources */,
 				3B82885F2D06118500D46417 /* DateFormatter + Util.swift in Sources */,
 				3B6FDD2E2D0642E700AF6004 /* VkTextField.swift in Sources */,
 				3B8288222D03D87800D46417 /* NetworkManager.swift in Sources */,
+				3B6FDD4C2D06E5AD00AF6004 /* TripDetailViewModel.swift in Sources */,
 				3B8288572D05F30900D46417 /* VkPrimaryButton.swift in Sources */,
 				3B82884B2D055EC600D46417 /* TripViewModel.swift in Sources */,
 				3B8288502D0575F700D46417 /* UIColor + Util.swift in Sources */,
@@ -522,6 +577,7 @@
 				3B8288542D05D50F00D46417 /* Color + Util.swift in Sources */,
 				3B6FDD302D06452000AF6004 /* CreateTripViewModel.swift in Sources */,
 				3B8288652D061B8D00D46417 /* VkMenuView.swift in Sources */,
+				3B6FDD462D06CD2900AF6004 /* TripDetailView.swift in Sources */,
 				3B82885D2D06107C00D46417 /* TripModel.swift in Sources */,
 				3B8287F42D03D75600D46417 /* VoyatekApp.swift in Sources */,
 				3B8288272D03DD0E00D46417 /* ApiError.swift in Sources */,

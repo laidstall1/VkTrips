@@ -48,6 +48,9 @@ class TripViewModel: ObservableObject {
    init() {
       self.dataSource = TripDataSource()
       trip = TripModel()
+      VkHelpers.delay(durationInSec: 3) {
+         self.tripData = TripModel.data
+      }
    }
    
    func fetchTrips() {

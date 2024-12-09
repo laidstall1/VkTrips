@@ -14,18 +14,21 @@ struct TripView: View {
    let date: String
    let noOfDays: String
    @State var dominantColor: Color = .white
+   var action: () -> Void
    
    init(imageName: Binding<String> = .constant("trip.placeholder"),
         location: String,
         title: String,
         date: String,
-        noOfDays: String
+        noOfDays: String,
+        action: @escaping () -> Void
    ) {
       self._imageName = imageName
       self.location = location
       self.title = title
       self.date = date
       self.noOfDays = noOfDays
+      self.action = action
    }
    
    var body: some View {
@@ -78,7 +81,8 @@ struct TripView: View {
          }
          
          VkPrimaryButton(action: {
-            
+            action()
+
          }, title: "View")
          .frame(height: 48)
       }
@@ -100,5 +104,5 @@ struct TripView: View {
    TripView(location: "Paris",
             title: "Bahamas Family Trip",
             date: "19th April 2024",
-            noOfDays: "5 Days")
+            noOfDays: "5 Days", action: {})
 }
