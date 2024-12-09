@@ -10,6 +10,7 @@ import SwiftUI
 struct SelectCityView: View {
    @ObservedObject var viewModel: CreateTripViewModel
    @Binding var shouldDismiss: Bool
+   @FocusState private var isFocused: Bool
 
     var body: some View {
        VStack(alignment: .leading) {
@@ -19,9 +20,12 @@ struct SelectCityView: View {
           
           VkTextField(placeholder: "Where to?",
                       submissionText: $viewModel.selectedLocation.location,
-                      height: 78, cornerRadius: 2) { value in
+                      height: 78, cornerRadius: 2, validate: { value in
              viewModel.beginSearch(for: value)
-          }
+          }, becomeResponder: _isFocused)
+          .onAppear(perform: {
+             isFocused = true
+          })
           
           VStack(spacing: 20) {
              ForEach($viewModel.filteredLocationData) { location in

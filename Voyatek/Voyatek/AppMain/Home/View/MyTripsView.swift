@@ -13,7 +13,7 @@ struct MyTripsView: View {
    @Binding var submissionText: String
    var action: ((Int) -> Void)?
    
-   @State private var selectedTripId: Int?
+   @State private var selectedTripId: String?
 
     var body: some View {
        VStack(alignment: .leading, spacing: 16) {
@@ -44,7 +44,8 @@ struct MyTripsView: View {
                   tag: trip.id,
                   selection: $selectedTripId,
                   label: {
-                     TripView(location: trip.destination,
+                     TripView(image: trip.base64ToImage(),
+                              location: trip.destination,
                               title: trip.tripName,
                               date: trip.startDate,
                               noOfDays: "\(trip.noOfDays) day(s)", action: {

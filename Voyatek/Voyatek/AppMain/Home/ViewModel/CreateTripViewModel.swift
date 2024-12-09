@@ -28,9 +28,7 @@ class CreateTripViewModel: ObservableObject, InputFieldValidationProtocol {
    
    init(trip: TripModel = TripModel()) {
       self.trip = trip
-      VkHelpers.delay(durationInSec: 2) {
-         self.locationData = Location.data
-      }
+      self.locationData = Location.data
    }
    
    func checkCreateTripFormStatus() -> Bool {
@@ -55,6 +53,12 @@ class CreateTripViewModel: ObservableObject, InputFieldValidationProtocol {
    func beginSearch(for searchText: String) {
       filteredLocationData = []
       searchText.isEmpty ? filteredLocationData = filteredLocationData : filterLocation(searchText)
+   }
+   
+   func clear() {
+      filteredLocationData = []
+      selectedLocation = Location()
+      trip = TripModel()
    }
 }
 
